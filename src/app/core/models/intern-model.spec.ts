@@ -19,7 +19,6 @@ describe('InternModel', () => {
   it(`Should have an id of 99 after setting the id`, () => {
     intern.setId(99);
     expect(intern.getId()).toEqual(99);
-
   });
 
   it(`Should have an empty name at InternModel instanciation`, () => {

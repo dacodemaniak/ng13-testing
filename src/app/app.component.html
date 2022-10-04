@@ -1,1 +1,6 @@
 <h1>{{ title }}</h1>
+
+<div id="intern">
+    <span id="intern-initials-pipe">{{ intern | internInitial }}</span>
+    <span id="intern-fullname">{{ intern.getFirstName() }} {{ intern.getLastName() }}</span>
+</div>

@@ -32,4 +32,14 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(titleValue);
   });
+
+  it(`Should render JA in intern-initial-pipes`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+
+    const content: string | null | undefined = compiled.querySelector('#intern #intern-initials-pipe')?.textContent;
+
+    expect(content).toBe('JA');
+  })
 });
