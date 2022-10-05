@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { InternInitialPipe } from './shared/pipes/intern-initial.pipe';
+import { IsRequiredDirective } from './shared/directives/is-required.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InternInitialPipe
+    InternInitialPipe,
+    IsRequiredDirective
   ],
   imports: [
     BrowserModule

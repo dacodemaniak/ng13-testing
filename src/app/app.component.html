@@ -4,3 +4,10 @@
     <span id="intern-initials-pipe">{{ intern | internInitial }}</span>
     <span id="intern-fullname">{{ intern.getFirstName() }} {{ intern.getLastName() }}</span>
 </div>
+
+<!-- ElementRef <=> HTMLElement -->
+<p [ngClass]="{'fullname': true, 'is-jl': intern.getLastName() === 'Aubert'}">
+    {{ intern.getLastName()}}
+</p>
+
+<input type="text" placeholder="Type your name..." appIsRequired>
